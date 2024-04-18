@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+@import url("https://fonts.googleapis.com/css?family=Manrope");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Lalezar");
+@import "assets/styles/helpers";
+@import '~bootstrap/dist/css/bootstrap.css';
+
+body {
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.199);
+
+}
+
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.mod-bdy {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    margin: 16%;
+
+    .mod-text {
+        margin-top: 32px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+.modal-content {
+    background-color: #000000bf;
+}
+
+.container-box {
+    background: linear-gradient(180deg, rgb(254 254 254 / 73%) -226.43%, rgb(0, 0, 0) 100%);
+    width: 100%;
+    display: flex;
+    padding: 54px 0;
+    align-items: center;
+    border-radius: 40px;
+    justify-content: space-around;
+
+    @include media-breakpoint('sm') {
+        flex-direction: column; // For small screens, stack elements vertically
+        // padding: 30px 0;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin-bottom: 12px;
+        flex-direction: column; // For small screens, stack elements vertically
+        text-align: center;
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        // padding: 24px 0;
+
+
+        flex-direction: column; // For small screens, stack elements vertically
+        text-align: center;
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        flex-direction: column; // For small screens, stack elements vertically
+        // padding: 30px 0;
+        flex-wrap: wrap;
+
+        text-align: center;
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        padding: 48px 0;
+        flex-direction: row !important; // For small screens, stack elements vertically
+        flex-wrap: wrap;
+        // text-align: center;
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        padding: 54px 0;
+        flex-direction: row !important;
+    }
+}
+
+.lable-style-signUp {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 75px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: white;
+
+    @include media-breakpoint('sm') {
+        font-size: 36px; // Adjust font size for small screens
+    }
+
+    @media only screen and (max-width: 600px) {
+        line-height: 32px;
+        font-size: 20px;
+        margin-bottom: 12px;
+        // margin: 0 10px 12px 10px;
+
+
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        line-height: 32px;
+        font-size: 20px;
+        margin-bottom: 12px;
+        // margin: 0 10px 12px 10px;
+
+
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        font-size: 36px;
+        line-height: 32px;
+        margin-bottom: 12px;
+        // margin: 0 10px 12px 10px;
+
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        padding: 40px 0;
+        line-height: 32px;
+        margin-bottom: 12px;
+
+
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        font-size: 44px;
+    }
+}
+
+.input-container {
+    // display: flex;
+    // align-items: center;
+    position: relative;
+    display: block;
+
+    @include media-breakpoint('sm') {
+        flex-direction: column; // For small screens, stack input and button vertically
+    }
+}
+
+.custom-btn {
+    position: relative;
+}
+
+.custom-btn,
+.input-cls {
+    background-color: #e69800;
+    color: #ffffff;
+    transform: skew(22deg);
+    transform-origin: bottom left;
+    border: #e69800;
+    padding: 10px;
+
+    /* Adjust the padding to your preference */
+    @include media-breakpoint('sm') {
+        margin-top: 10px; // Add spacing between input and button for small screens
+    }
+
+
+}
+
+.lable-style-btn,
+.input-cls {
+    // background-color: #e69800;
+    font-family: "Lalezar", sans-serif;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: white;
+    display: inline-block;
+    transform: skew(-22deg);
+    padding: 4px 20px;
+
+    @include media-breakpoint('sm') {
+        font-size: 14px; // Adjust font size for small screens
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        font-size: 18px !important;
+
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+
+        font-size: 16px !important;
+
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        font-size: 36px !important;
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        font-size: 40px !important;
+
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        font-size: 44px;
+    }
+}
+
+
+
+
+.input-cls {
+    font-size: 36px;
+    height: 76px;
+    transform: skew(22deg);
+    background-color: #000000 !important;
+
+    @include media-breakpoint('sm') {
+        width: 100%; // Make the input full width for small screens
+        margin-bottom: 10px; // Add spacing below the input for small screens
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        padding: 4px 8px;
+        height: 47px;
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+
+        // padding: 4px 0px;
+        height: 76px;
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {}
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        height: 82px;
+    }
+
+
+
+
+}
+
+.input-cls::placeholder {
+    color: #e69800;
+    opacity: 1;
+    font-size: 16px;
+    transform: skew(-22deg);
+    margin-left: 12px;
+
+    @include media-breakpoint('sm') {
+        margin-left: 0; // Remove margin-left for small screens
+        margin-top: 5px; // Add spacing above placeholder for small screens
+    }
+}
+
+.input-cls::-ms-input-placeholder {
+    color: #e69800;
+}
+
+
+.btn_bx {
+    z-index: 9;
+    position: relative;
+    // transform: skew(22deg) !important;
+}
+
+.btn_inner::after {
+    content: "";
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    padding: 40px;
+}
+
+.btn_bx:hover .btn_inner::after {
+    transform: translate(0px, 10px) skew(22deg);
+    transition: .4s;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .lable-style-btn {
+        transform: skew(-12deg);
+        padding: 0px 76px;
+
+    }
+
+    .main-content {
+        padding: 54px 16px 1px !important;
+    }
+
+    .btn_bx:hover .btn_inner::after {
+        transform: translate(5px, 10px) skew(12deg);
+    }
+
+    .input-cls {
+        transform: skew(12deg);
+        margin-bottom: 16px;
+    }
+
+    .custom-btn {
+        transform: skew(12deg);
+    }
+
+    .input-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn_inner::after {
+        padding: 4px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .lable-style-btn {
+        transform: skew(-12deg);
+        padding: 0px 76px;
+
+    }
+
+    .btn_bx:hover .btn_inner::after {
+        transform: translate(5px, 10px) skew(12deg);
+    }
+
+    .input-cls {
+        transform: skew(12deg);
+        margin-bottom: 0px;
+    }
+
+    .custom-btn {
+        transform: skew(12deg);
+    }
+
+    .input-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn_inner::after {
+        padding: 4px;
+    }
+
+    .main-content {
+        padding: 54px 16px 1px !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .lable-style-btn {
+        transform: skew(-22deg);
+        padding: 4px 42px;
+    }
+
+    .btn_bx:hover .btn_inner::after {
+        transform: translate(0px, 10px) skew(22deg);
+    }
+
+    .input-cls {
+        transform: skew(22deg);
+    }
+
+    .custom-btn {
+        transform: skew(22deg);
+    }
+
+    .input-container {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn_inner::after {
+        padding: 40px;
+    }
+
+    .main-content {
+        padding: 54px 32px 1px !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .lable-style-btn {
+        transform: skew(-22deg);
+        padding: 4px 42px;
+    }
+
+    .btn_bx:hover .btn_inner::after {
+        transform: translate(0px, 10px) skew(22deg);
+    }
+
+    .input-cls {
+        transform: skew(22deg);
+    }
+
+    .custom-btn {
+        transform: skew(22deg);
+        padding: 6px;
+    }
+
+    .input-container {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn_inner::after {
+        padding: 40px;
+    }
+
+    .main-content {
+        padding: 54px 32px 1px !important;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .lable-style-btn {
+        transform: skew(-22deg);
+        padding: 4px 42px;
+    }
+
+    .btn_bx:hover .btn_inner::after {
+        transform: translate(0px, 10px) skew(22deg);
+    }
+
+    .input-cls {
+        transform: skew(22deg);
+    }
+
+    .custom-btn {
+        transform: skew(22deg);
+        padding: 10px;
+    }
+
+    .input-container {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn_inner::after {
+        padding: 40px;
+    }
+
+    .main-content {
+        padding: 54px 32px 1px !important;
+    }
+
+}

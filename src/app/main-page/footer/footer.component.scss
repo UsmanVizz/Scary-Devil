@@ -1,0 +1,67 @@
+/* Common styles for both mobile and desktop */
+.images {
+    margin-right: 16px;
+}
+
+.copywite-text {
+    width: 88%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    .label-style {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 16px;
+        color: white
+    }
+}
+
+.social-media {
+    width: 12%;
+    justify-content: flex-end;
+    /* Updated this to 'flex-end' */
+    display: flex;
+    padding-right: 16px;
+}
+
+/* Mobile view styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .header-block {
+        justify-content: center !important;
+        /* Assuming you have .header-block class in your HTML */
+    }
+
+    .copywite-text {
+        width: 100% !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .social-media {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+/* Footer styles */
+.container {
+    display: flex;
+    // position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    /* Ensure full width */
+    background-color: transparent;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* Spread items horizontally */
+    border-top: 1px solid white;
+}

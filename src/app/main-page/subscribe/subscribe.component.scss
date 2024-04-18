@@ -1,0 +1,402 @@
+.input-container {
+    display: flex;
+    // justify-content: space-around;
+}
+
+.input-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-control {
+    border-radius: 40px;
+}
+
+
+.input-class {
+    font-size: 36px;
+    height: 84px;
+    padding: 0 0 0 32px !important;
+    background-color: #000000 !important;
+    font-family: "Lalezar", sans-serif;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: white;
+    display: inline-block;
+
+    @media only screen and (max-width: 600px) {
+
+        font-size: 18px !important;
+        padding: 4px 8px;
+        height: 54px;
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+
+        font-size: 16px !important;
+        height: 76px;
+
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        font-size: 20px !important;
+        height: 76px;
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        font-size: 28px !important;
+
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        font-size: 28px;
+        height: 82px;
+    }
+}
+
+
+
+.input-class::placeholder {
+    color: #333333;
+    opacity: 1;
+    font-size: 16px;
+
+
+}
+
+.input-class::-ms-input-placeholder {
+    color: #333333;
+}
+
+.btn_round {
+    z-index: 9;
+    position: relative;
+    // transform: skew(22deg) !important;
+}
+
+.btn_round_inner::after {
+    content: "";
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    padding: 40px;
+    border-radius: 50px;
+}
+
+.btn_round:hover .btn_round_inner::after {
+    transform: translate(10px, 10px);
+    transition: 0.4s;
+    border: 2px solid rgb(255, 255, 255);
+    // border-radius: 50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .lable-btn {
+        // transform: skew(-12deg);
+        padding: 0px 76px;
+
+    }
+
+    .width_custom {
+        width: 100% !important;
+
+    }
+
+    .btn_round:hover .btn_round_inner::after {
+        transform: translate(10px, 10px);
+    }
+
+    .space-bottom {
+        margin-bottom: 16px;
+    }
+
+
+
+    .input-btn {
+        flex-direction: column;
+    }
+
+    .margin-btm {
+        margin-bottom: 16px;
+    }
+
+
+    .input-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn_round_inner::after {
+        padding: 4px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .lable-btn {
+        // transform: skew(-12deg);
+        padding: 0px 76px;
+
+    }
+
+    .btn_round:hover .btn_round_inner::after {
+        transform: translate(10px, 10px);
+    }
+
+
+    .space-bottom {
+        margin-bottom: 16px;
+    }
+
+    .width_custom {
+        width: 100% !important;
+    }
+
+    .input-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn_round_inner::after {
+        padding: 4px;
+    }
+
+
+    .input-btn {
+        flex-direction: column;
+    }
+
+    .margin-btm {
+        margin-bottom: 16px;
+        // width: 100% !important;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .lable-btn {
+        // transform: skew(-22deg);
+        padding: 4px 42px;
+    }
+
+    .btn_round:hover .btn_round_inner::after {
+        transform: translate(10px, 10px);
+    }
+
+    .space-bottom {
+        margin-bottom: 16px;
+    }
+
+
+    .input-btn {
+        flex-direction: row;
+    }
+
+    .margin-btm {
+        margin-bottom: 0;
+        // width: 100% !important;
+    }
+
+    .input-container {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn_round_inner::after {
+        padding: 20px;
+    }
+
+    .main-content {
+        padding: 54px 32px 1px !important;
+    }
+
+    .width_custom {
+        width: 60% !important;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .lable-btn {
+        // transform: skew(-22deg);
+        padding: 4px 42px;
+    }
+
+    .btn_round:hover .btn_round_inner::after {
+        transform: translate(10px, 10px);
+    }
+
+    .space-bottom {
+        margin-bottom: 16px;
+    }
+
+    .col_custum {
+        width: 100% !important;
+    }
+
+    .input-btn {
+        flex-direction: row;
+    }
+
+    .margin-btm {
+        margin-bottom: 0;
+        // width: 100% !important;
+    }
+
+    .width_custom {
+        width: 60% !important;
+    }
+
+    .row_cust {
+        flex-direction: row;
+    }
+
+    .custom-round-btn {
+        // transform: skew(22deg);
+        padding: 6px;
+    }
+
+    .input-container {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn_round_inner::after {
+        padding: 28px;
+    }
+
+    .main-content {
+        padding: 54px 32px 1px !important;
+    }
+
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .lable-btn {
+        // transform: skew(-22deg);
+        padding: 4px 42px;
+    }
+
+    .btn_round:hover .btn_round_inner::after {
+        transform: translate(10px, 10px);
+    }
+
+    .input-btn {
+        flex-direction: row;
+    }
+
+    .margin-btm {
+        margin-bottom: 0;
+        // width: 100% !important;
+    }
+
+    .width_custom {
+        width: 60% !important;
+    }
+
+    .col_custum {
+        width: 50% !important;
+    }
+
+    .custom-round-btn {
+        // transform: skew(22deg);
+        padding: 10px;
+    }
+
+    .input-container {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row_cust {
+        flex-direction: row;
+    }
+
+    .btn_round_inner::after {
+        padding: 28px;
+    }
+
+    .main-content {
+        padding: 54px 32px 1px !important;
+    }
+
+    .space-bottom {
+        margin-bottom: 0px;
+    }
+}
+
+
+.custom-round-btn {
+    position: relative;
+}
+
+.custom-round-btn,
+.input-class {
+    background-color: #333333;
+    color: #ffffff;
+    transform-origin: bottom left;
+    border: #333333;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+
+
+
+
+.lable-btn {
+    font-family: "Lalezar", sans-serif;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 18px !important;
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        font-size: 16px !important;
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        font-size: 20px !important;
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        font-size: 28px !important;
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        font-size: 28px;
+    }
+}

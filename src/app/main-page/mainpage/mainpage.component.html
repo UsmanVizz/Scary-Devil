@@ -1,0 +1,81 @@
+<div class="main-body">
+    <div class="header">
+        <div class="nav w-100-p">
+            <div class="header-block">
+                <span class="w-60-p image-hide">
+                    <img src="../../assets/images/tzugai.svg" class="image-size " alt="">
+                </span>
+
+                <img src="../../assets/images/tzugai.svg" class="image-show " alt="">
+
+                <div class="userprofile">
+
+                    <a href="https://www.instagram.com/tzugai_toy/" target="_blank">
+                        <img src="../../assets/images/instagram.svg" alt="Instagram" class="images ">
+                    </a>
+
+                    <a href="https://twitter.com/tzugai" target="_blank">
+                        <img src="../../assets/images/x.svg" alt="Twitter" class="images">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-container *ngIf="!mobile">
+        <div class="video-container">
+            <video id="background-video" class="background-clip" playsinline autobuffer [loop]="true" [muted]="true"
+                [autoplay]="true" data-wf-ignore="true" data-object-fit="cover">
+                <source [src]="video" type="video/mp4" data-wf-ignore="true">
+            </video>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="mobile">
+        <div class="video-container">
+            <!-- <img src="../../../assets/images/image_2024_03_15T16_25_08_724Z.png" id="background-video" class="background-clip"  alt="demo" class="images "> -->
+            <video id="background-video" class="background-clip" style="height: 100%;" playsinline autobuffer
+                [controls]="false" [loop]="true" [muted]="true" [autoplay]="true" data-wf-ignore="true"
+                data-object-fit="cover">
+                <source [src]="video" type="video/mp4" data-wf-ignore="true">
+            </video>
+        </div>
+    </ng-container>
+
+
+    <!-- <div class="header">
+        <div class="nav w-100-p">
+            <div class="header-block">
+                <span class="w-60-p image-hide">
+                    <img src="../../assets/images/tzugai.svg" class="image-size " alt="">
+                </span>
+
+                <img src="../../assets/images/tzugai.svg" class="image-show " alt="">
+
+                <div class="userprofile">
+
+                    <a href="https://www.instagram.com/tzugai_toy/" target="_blank">
+                        <img src="../../assets/images/instagram.svg" alt="Instagram" class="images ">
+                    </a>
+
+                    <a href="https://twitter.com/tzugai" target="_blank">
+                        <img src="../../assets/images/x.svg" alt="Twitter" class="images">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div style="height: 100vh;">
+    </div> -->
+    <div class="main-content">
+        <div class="mb-32">
+            <!-- <app-mint></app-mint> -->
+        </div>
+        <div class="mb-32">
+            <app-subscribe></app-subscribe>
+        </div>
+        <div>
+
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>
