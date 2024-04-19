@@ -49,7 +49,7 @@ export class SubscribeComponent implements OnInit {
       return;
     }
     else {
-      const slug = new URL(`${environment.baseUrl}subscribed`);
+      const slug = new URL(`${environment.baseUrl}scary_devil/subscribed/add`);
       this.apiService.post(slug.href, { email: this.email.value }).pipe(first()).subscribe((res: any) => {
         console.log(res);
         this.openModalWithComponent(" Your Email Has Been Registered", "../../assets/images/tickN.png")
